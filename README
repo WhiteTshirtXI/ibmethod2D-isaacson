@@ -1,0 +1,40 @@
+2D Cartesian Grid Immersed Boundary Navier-Stokes fluid solver. Uses a
+periodic, square domain. Note, the solver does not handle wrapping of
+immersed boundary structures across periodic boundaries.  You must
+make sure that the structure stays away from the boundaries!
+
+Numerical method is that of C. S. Peskin, "The Immersed Boundary Method",
+Acta Numerica 11:479-517, 2002    
+
+License: This code is free to use for any purposes, provided
+         any publications resulting from the use of this code
+         reference the original code/author.
+
+Author:  Samuel Isaacson (isaacson@math.utah.edu)
+
+Date:    11/2007
+
+Please notify the author of any bugs, and contribute any
+modifications or bug fixes back to the original author.
+
+Disclaimer:
+ This code is provided as is. The author takes no responsibility 
+ for its results or effects.
+
+ibDriver.m    - runs the Immersed Boundary Solver
+fluidSolver.m - runs just the Navier-Stokes fluid solver.
+
+Files:
+D02DPeriodic.m
+D02DPeriodicFT.m
+advanceBoundary.m
+calcLagrangianForce.m
+evalDelta.m
+evalPhi.m
+fluidDriver.m
+fluidSolver.m
+ibDriver.m
+ibmethod.zip
+lap2DPeriodic.m
+lap2DPeriodicFT.m
+spreadForce.m
